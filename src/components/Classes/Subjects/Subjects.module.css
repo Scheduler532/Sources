@@ -1,0 +1,167 @@
+.p_style {
+    display: inline-block;
+    position:relative;
+    color: #2f343a;
+    font-family: "Google Sans", "Roboto", Helvetica;
+    background-color: rgb(167, 192, 201);
+    border-radius: 0.8em;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+.a_style {
+    display: inline;
+    position:relative;
+    margin-left: 1em;
+    text-decoration:none;
+    color: #2f343a;
+    font-family: "Google Sans", "Roboto", Helvetica;
+    font-weight: bold;
+    padding: 0.5em;
+    border-radius: 0.8em;
+    transition: background-color 0.3s ease;
+}
+
+.a_style:hover {
+    background-color: #f0f0f0;
+}
+
+.title {
+    color: #2f343a;
+    font-family: "Google Sans", "Roboto", Helvetica;
+    background-color: rgb(167, 192, 201);
+    border-radius: 0.8em;
+    padding: 0.5em;
+    font-weight: bolder;
+    user-select: none;
+    display: flex;
+    transition: background-color 0.3s;
+}
+
+.title.canexpand:hover {
+    background-color: rgb(182, 206, 214);
+}
+
+.addnew_b {
+    cursor: pointer;
+}
+
+.close {
+    opacity: 0;
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+.open {
+    display: block;
+    opacity: 100;
+}
+
+.addbutton {
+    display: block;
+    position: relative;
+    width: 4em;
+    left: 1em;
+    margin-left: 1em;
+    font-size: 70%;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: rgb(45, 152, 45);
+    border-radius: 0.8em;
+    padding: 0.5em;
+    color: white;
+    font-weight: bolder;
+    transition: background-color 0.3s;
+    user-select: none;
+}
+
+.addbutton.notfilled {
+    background-color: rgb(34, 118, 34);
+    color: rgb(220, 220, 220);
+}
+
+.addbutton:hover {
+    background-color: rgb(34, 118, 34);
+}
+
+.deleteB {
+    display: inline-block;
+    position: relative;
+    margin: 0.5em;
+    font-size: 70%;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #b42d2d;
+    border-radius: 0.8em;
+    padding:0.5em;
+    font-weight: bolder;
+    color:white;
+    transition: background-color 0.3s;
+    user-select: none;
+    z-index:11;
+}
+
+.deleteB:hover{
+    background-color: #9e2727;
+}
+
+.invB {
+    display: inline-block;
+    position: relative;
+    margin: 0.5em;
+    font-size: 70%;
+    font-weight: 500;
+    background-color:transparent;
+    border-radius: 0.8em;
+    padding:0.5em;
+    font-weight: bolder;
+    color:transparent;
+    transition: background-color 0.3s;
+    user-select: none;
+}
+
+.databox {
+    display: inline-block;
+    position: relative;
+    color: #2f343a;
+    outline: none;
+    border: 2px solid rgb(219, 219, 219);
+    border-radius: 1.0em;  
+    padding: 0.5em; 
+    background-color: rgb(219, 219, 219); 
+    font-family: "Google Sans", "Roboto", Helvetica;  
+    font-weight: bold;
+    font-size: 70%;
+    width: 70%;
+    transition: box-shadow 0.3s;
+    z-index: 11;
+    margin: 0.1em;
+}
+
+.databox:hover{
+    box-shadow: 0px 0px 2px rgb(122, 122, 122);
+}
+
+.databox.addnew_category {
+    left: 2em;
+    margin-bottom: 1em;
+}
+
+.databox.addnew_item {
+    left: 4em;
+    margin-bottom: 0.5em;
+}
+
+.category_bg {
+    background-color: rgb(234, 244, 243);
+    border-radius: 2em;
+    border: rgb(238, 238, 238) solid 5px;
+    display: block;
+    position: relative;
+    left: 2em;
+    padding: 1em;
+    padding-top: 2em;
+    top: -1.5em;
+    z-index:10;
+    width: 90%;
+}

@@ -1,0 +1,33 @@
+.container {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    top: -10em;
+    transition: top 2s ease-in-out;
+}
+
+.container.shown {
+    top:0;
+}
+
+.content {
+    font-family: "Google Sans", "Roboto", Helvetica;
+    font-size: 100%;
+    font-weight: bold;
+    color: white;
+    overflow: scroll;
+    white-space:nowrap;
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(126, 203, 118);
+    padding: 1em;
+    width: 50em;
+    max-width: 100%;
+
+    border-radius: 1em;
+    box-shadow: 0px 1px 5px 5px rgba(0,0,0,.1);
+}

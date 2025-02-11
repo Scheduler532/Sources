@@ -1,0 +1,44 @@
+.title{
+    font-family: "Google Sans", "Roboto", Helvetica;
+    font-weight: 1000;
+    margin-left: 10px;
+}
+
+.virsion{
+    font-family: "Google Sans", "Roboto", Helvetica;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.info{
+    font-family: "Google Sans", "Roboto", Helvetica;
+    font-weight: 400;
+    margin-left: 30px;
+    margin-top: -20px;
+    font-size: medium;
+}
+
+.f_form {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    position: relative;
+    color: rgb(99, 147, 201);
+    padding: 1em 2em;
+    font-weight: 400;
+    font-family: "Google Sans", "Roboto", Helvetica;
+    text-decoration: none;
+}
+
+.body{
+    margin-left: 10px;
+}
+
+.back2home {
+    position: relative;
+    color: rgb(127, 143, 160);
+    padding-left: 1em;
+    font-weight: 400;
+    font-family: "Google Sans", "Roboto", Helvetica;
+    text-decoration: none;
+}

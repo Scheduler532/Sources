@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    }
+    
+*:focus {
+  outline: none;
+}
+
+.SLoginBody {
+  font-family: "Google Sans", "Roboto", Helvetica;
+  background-color: #eaf4fc;
+  padding-top: 100px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.LoginBody {
+  font-family: "Google Sans", "Roboto", Helvetica;
+  background-color: #eaf4fc;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.login {
+  margin: 20px auto;
+  width: 350px;
+}
+
+.Sloginscreen {
+  background-color: #FFF;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+.loginscreen {
+  background-color: #FFF;
+  padding: 40px;
+  border-radius: 5px;
+  position: relative;
+  top: calc(10vh + 5em);
+}
+
+button {
+  padding: 0;
+  font-family: "Google Sans", "Roboto", Helvetica;
+  appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.buttonOutline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 320px;
+  height: 64px;
+  padding: 8px 24px;
+  font-family: "Google Sans", "Roboto", Helvetica;
+  font-size: 16px;
+  color: #4a7fa2;
+  text-align: center;
+  overflow-wrap: anywhere;
+  background-color: transparent;
+  border: 2px solid #4a7fa2;
+}
+
+@media (any-hover: hover) {
+  .buttonOutline {
+    transition: background-color 0.2s;
+  }
+
+  .buttonOutline:hover {
+    background-color: #d2e0ed;
+  }
+}
+
+.ErrorMessage{
+  color: #b90f0f;
+  display: none;
+}
+
+.Guest{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 64px;
+  font-family: "Google Sans", "Roboto", Helvetica;
+  font-size: 14px;
+  color: #4a7fa2;
+  background-color: transparent;
+}
+
+.loginTitle {
+  display: block;
+  font-family: "Google Sans","Roboto",Helvetica;
+  font-weight: bolder;
+  font-size: 200%;
+  margin: 20px;
+  text-align: center;
+  user-select: none;
+}
+
+.schedulerlogo {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  user-select: none;
+  z-index: 1000;
+}
+
+.Title {
+  display: block;
+  position: absolute;
+  font-family: "Google Sans","Roboto",Helvetica;
+  font-weight: lighter;
+  font-size: 250%;
+  top: 10px;
+  left: 60px;
+  user-select: none;
+  text-decoration: none;
+  color:#39505f;
+}

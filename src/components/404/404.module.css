@@ -1,0 +1,19 @@
+.notfound_title {
+    font-family: "Google Sans","Roboto",Helvetica;
+    font-size: 100px;
+    font-weight: 400;
+    color: rgb(56, 56, 56);
+}
+.notfound_text {
+    font-family: "Google Sans","Roboto",Helvetica;
+    font-size:20px;
+    font-weight: 400;
+    color: rgb(56, 56, 56);
+}
+.back {
+    font-family: "Google Sans","Roboto",Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(0, 81, 255);
+    text-decoration: none;
+}

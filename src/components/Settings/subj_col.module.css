@@ -1,0 +1,65 @@
+.container {
+    vertical-align:top;
+    width: 80px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+}
+  
+.pikker {
+    position: absolute;
+    top: 380px;
+    left: 30px;
+}
+
+.pikkerBack {
+position: fixed;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+}
+
+.btn{
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 50px; /* 半径50pxの丸い形 */
+    color: white; /* ボタンのテキスト色 */
+    cursor: pointer;
+    border: none;
+}
+
+.subjName{
+    font-size: 18px;
+    font-family:"Google Sans","roboto","helvetica";
+    font-weight: 400;
+    color: #5e5d5d;
+    display: inline;
+    white-space: nowrap;
+
+}
+
+.reset_btn{
+    display: inline-block;
+    background-color: #5e5d5d;
+    padding: 5px 10px;
+    border-radius: 50px; /* 半径50pxの丸い形 */
+    color: white; /* ボタンのテキスト色 */
+    cursor: pointer;
+    border: none;
+}
+
+.reset_container{
+    vertical-align:top;
+    display: inline-block;
+    margin-left: 20px;
+    width: 80px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+}

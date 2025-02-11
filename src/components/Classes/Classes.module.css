@@ -1,0 +1,99 @@
+.bg {
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*font-size: calc(10px + 2vmin);*/
+    color: #2f343a;
+}
+
+.content {
+    margin-top: -2em;
+    margin-left: 1em;
+    font-size: calc(10px + 2vmin);
+}
+
+.version {
+    font-family: "Google Sans", "Roboto", Helvetica;
+    font-weight: 200;
+    margin-right: 10px;
+    color: #888;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -10px;
+    font-size: 1em;
+  }
+
+.title {
+    font-family: "Google Sans", "Roboto", Helvetica;
+    color: #2f343a;
+    font-size: larger;
+    font-weight: bolder;
+    user-select: none;
+    display: flex;
+}
+
+.hover :hover{
+    color: #aac7e7;
+}
+
+.edit {
+    display: block;
+    position: relative;
+    color: rgb(167, 192, 201);
+    line-height: 1;
+    width: 1.05em;
+    height: 0.2em;
+    background: currentColor;
+    border-radius: 0 0.075em 0.075em 0;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top:50%;
+}
+  
+.edit::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0.1em 0.15em;
+    border-right-color: currentColor;
+    border-left: 0;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    margin: auto;
+}
+
+.edit::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0.15em;
+    border-left: 0.05em solid #333;
+    box-sizing: content-box;
+}
+
+.editcontainer {
+    display: flex;
+    position:relative;
+    left: 0.6em;
+    top: 0em;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    cursor:pointer;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.editcontainer:hover {
+    background-color: #9d9d9d26;
+}

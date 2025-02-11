@@ -1,0 +1,748 @@
+.sidebar {
+    position: fixed;
+    margin-top: -0.9em;
+    left: -100px; /* 初期状態では画面外に配置 */
+    width: 145px;
+    height: 100%;
+    background-color: rgb(249,249,249);
+    color: rgb(40, 40, 40);
+    transition: left 0.3s ease, box-shadow 0.2s ease; 
+    z-index: 10;
+    overflow: scroll;
+    scrollbar-width: 0;
+    user-select: none;
+}
+
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+
+.sidebar:hover{
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.35);
+    left:0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    /*transition: background-color 0.3s ease;*/
+}
+li:hover {
+    background-color:rgb(238, 238, 238); 
+}
+
+.sidebar ul li a {
+    color: rgb(40,40,40);
+    text-decoration: none;
+}
+
+.sidebar_handy {
+    position: fixed;
+    margin-top: -0.9em;
+    left: -100px; /* 初期状態では画面外に配置 */
+    width: 145px;
+    height: 100vh;
+    background-color: rgb(249,249,249);
+    color: rgb(40, 40, 40);
+    transition: left 0.3s ease, box-shadow 0.2s ease; 
+    z-index: 100;
+    overflow-y: scroll;
+    scrollbar-width: 0;
+}
+
+.sidebar_handy::-webkit-scrollbar{
+    display: none;
+}
+
+.sidebar_handy.open {
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.35);
+    left:0;
+}
+
+.sidebar_handy ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar_handy ul li {
+    padding: 10px;
+    /*transition: background-color 0.3s ease;*/
+}
+li:hover {
+    background-color:rgb(238, 238, 238); 
+}
+
+.sidebar_handy ul li a {
+    color: rgb(40,40,40);
+    text-decoration: none;
+}
+
+.circle {
+    display: flex;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    right: 0.7em;
+    margin-top: -1.5em;
+    position:absolute;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    color:rgb(40,40,40);
+    border: 2px solid #b8b8b8; /* 枠線を追加 */
+}
+
+.createbutton {
+    display: block;
+    position: absolute;
+    left: 4em;
+    user-select: none;
+    cursor: pointer;
+    color:white;
+    font-weight: bolder;
+    font-family:'Google Sans','Roboto',Helvetica;
+    background-color: rgb(45, 152, 45);
+    padding:2px;
+    padding-right:15px;
+    padding-left:10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.createbutton:hover {
+    background-color: rgb(34, 118, 34);
+}
+
+.version {
+    font-family: "Google Sans", "Roboto", Helvetica;
+    font-weight: 200;
+    margin-right: 10px;
+    color: #888;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -10px;
+    user-select: none;
+  }
+
+.postbg {
+    display:flex;
+    position: fixed;
+    background-color: #000000af;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.postbg.close {
+    display:none;
+}
+
+.postcontainer {
+    display:flex;
+    position: absolute;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 1em;
+    z-index: 1000;
+    width: 50%;
+    height: 65%;
+    background-color: white;
+}
+
+.postcontainer.handy {
+    width: 100%;
+    height: 500px;
+    overflow: scroll;
+    border: 1px solid white;
+}
+
+.postcontainer_handy {
+    display: flex;
+    position: fixed;
+    border-radius: 1em;
+    z-index: 1000;
+    width: 100%;
+    height: 550px;
+    bottom: -550px;
+    background-color: white;
+    transition: bottom 0.3s ease-in-out;
+}
+
+.postcontainer_handy.open{
+    bottom: -15px;
+    overflow: hidden;
+}
+
+h1 {
+    margin-left: 1em;
+    font-family: "Google Sans","Roboto",Helvetica;
+    user-select: none;
+}
+
+.closebutton {
+    display: flex;
+    width: 2em;
+    height: 1.96em;
+    border-radius: 50%;
+    right: 0.5em;
+    top: 0.5em;
+    position:absolute;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    background-color: #000000af;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.closebutton:hover {
+    background-color: #000000bd;
+}
+
+.infobutton {
+    display: flex;
+    width: 2em;
+    height: 1.96em;
+    border-radius: 50%;
+    right: 3em;
+    top: 0.5em;
+    position:absolute;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    color:rgb(50, 50, 50);
+    background-color: transparent;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.infobutton:hover {
+    background-color: #ccccccbd;
+}
+
+.infoopen {
+    display: flex;
+    position: absolute;
+    background-color: rgb(242, 242, 242);
+    padding: 0.5em;
+    font-family: "Google Sans","Roboto",Helvetica;
+    font-size: 100%;
+    font-weight: bold;
+    border-radius: 0.5em;
+    top: 2.8em;
+    right: 3em;
+    z-index: -1000;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,.5);
+    user-select: none;
+    opacity: 0%;
+    transition: opacity 0.3s;
+}
+
+.infoopen.open {
+    opacity: 100%;
+    z-index:2000;
+}
+
+.delbutton {
+    display: flex;
+    padding: 0.5em;
+    border-radius: 1em;
+    right: 7.5em;
+    top: 1.7em;
+    font-weight: bolder;
+    position:absolute;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    background-color: #b42d2d;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.delbutton:hover{
+    background-color: #9e2727;
+}
+
+.postbutton {
+    display: flex;
+    padding: 0.5em;
+    border-radius: 1em;
+    right: 3em;
+    top: 1.7em;
+    font-weight: bolder;
+    position:absolute;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    background-color: rgb(45, 152, 45);
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.postbutton:hover{
+    background-color: rgb(34, 118, 34);
+}
+
+.postbutton_barrier {
+    display: flex;
+    padding: 0.5em;
+    border-radius: 1em;
+    right: 3em;
+    top: 1.7em;
+    font-weight: bolder;
+    position:absolute;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    color:rgba(0, 0, 0, 0.302);
+    background-color: rgba(0, 0, 0, 0.302);
+    transition: background-color 0.3s;
+    z-index:1001;
+    cursor: not-allowed;
+}
+
+.bar_bg {
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 5em;
+    width: 100%;
+}
+
+.largebar_bg {
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 10em;
+    width: 100%;
+}
+
+.fillin {
+    display: inline-block;
+    color: #2f343a;
+    outline: none;
+    border: 2px solid rgb(219, 219, 219);
+    border-radius: 1.0em;  
+    padding: 1em; 
+    background-color: rgb(219, 219, 219); 
+    font-family: "Google Sans", "Roboto", Helvetica;  
+    font-weight: bold;
+    font-size: 100%;
+    width: 70%;
+}
+
+.largefillin {
+    display: inline-block;
+    color: #2f343a;
+    outline: none;
+    border: 2px solid rgb(219, 219, 219);
+    border-radius: 1.0em;  
+    padding: 1em; 
+    background-color: rgb(219, 219, 219); 
+    font-family: "Google Sans", "Roboto", Helvetica;  
+    font-weight: bold;
+    font-size: 100%;
+    width: 70%;
+    overflow: hidden;
+    resize: none;
+}
+
+.duedatecontainer {
+    text-align: left;
+    display: block;
+    position: absolute;
+    top: 20em;
+    left: 15%;
+    width: 85%;
+}
+
+.inputlabel {
+    font-family: "Google Sans", "Roboto", Helvetica;  
+    font-weight: bold;
+    color: #2f343a;
+}
+
+.inputduedate {
+    display: inline-block;
+    color: #2f343a;
+    outline: none;
+    border: 2px solid rgb(219, 219, 219);
+    border-radius: 1.0em;  
+    padding: 1em; 
+    background-color: rgb(219, 219, 219); 
+    font-family: "Google Sans", "Roboto", Helvetica;  
+    font-weight: bold;
+    font-size: 100%;
+    height: 1em;
+}
+
+.classcontainer {
+    text-align: left;
+    display: block;
+    position: absolute;
+    top: 23.5em;
+    left: 15%;
+    width: 85%;
+}
+
+.inputclass {
+    display: inline-block;
+    color: #2f343a;
+    outline: none;
+    border: 2px solid rgb(219, 219, 219);
+    border-radius: 1.0em;  
+    background-color: rgb(219, 219, 219); 
+    font-family: "Google Sans", "Roboto", Helvetica;  
+    font-weight: bold;
+    font-size: 100%;
+    height: 2em;
+}
+
+.subjectscontainer {
+    text-align: left;
+    display: block;
+    position: absolute;
+    top: 27em;
+    left: 15%;
+    width: 85%;
+}
+
+.inputsubjects {
+    display: inline-block;
+    color: #2f343a;
+    outline: none;
+    border: 2px solid rgb(219, 219, 219);
+    border-radius: 1.0em;   
+    background-color: rgb(219, 219, 219); 
+    font-family: "Google Sans", "Roboto", Helvetica;  
+    font-weight: bold;
+    font-size: 100%;
+    height: 2em;
+}
+
+.notificationcontainer {
+    text-align: left;
+    display: block;
+    position: absolute;
+    top: 30.5em;
+    left: 15%;
+    width: 85%;
+}
+
+.inputnotification {
+    display: inline-block;
+    color: #2f343a;
+    outline: none;
+    border: 2px solid rgb(219, 219, 219);
+    border-radius: 1.0em;  
+    padding: 10px; 
+    background-color: rgb(219, 219, 219); 
+    font-family: "Google Sans", "Roboto", Helvetica;  
+    font-weight: bold;
+    height: 1em;
+    transform: scale(1.5);
+    margin-left: 3px;
+    accent-color: rgb(219,219,219);
+    border-color: #2f343a;
+}
+
+.datecontainer {
+    text-align: left;
+    display: block;
+    position: absolute;
+    top: 5em;
+    left: 15%;
+    width: 70%;
+    padding:0.5em;
+    border: 2px solid rgb(219, 219, 219);
+    border-radius: 0.7em;   
+    background-color: rgb(219, 219, 219); 
+}
+
+.tagscontainer {
+    text-align: right;
+    display: block;
+    position: absolute;
+    top: 10em;
+    right: 15%;
+    padding:0.5em;
+    border: 2px solid rgb(240, 240, 240);
+    border-radius: 0.7em;   
+    background-color: rgb(240, 240, 240); 
+}
+
+.contentcontainer {
+    text-align: left;
+    display: block;
+    position: absolute;
+    top: 14em;
+    left: 15%;
+    width: 70%;
+    height: 50%;
+    border: 2px solid rgb(219, 219, 219);
+    border-radius: 0.7em;   
+    background-color: rgb(219, 219, 219); 
+    padding:0.5em;
+}
+
+.heading {
+    display: inline-block;
+    color: #2f343a;
+    outline: none;
+    border-radius: 1.0em;   
+    background-color: rgb(167, 192, 201); 
+    font-family: "Google Sans", "Roboto", Helvetica;  
+    font-weight: bold;
+    font-size: 100%;
+    padding:0.5em;
+    margin-right: 1em;
+    user-select: none;
+}
+
+.tagtxt {
+    display: inline-block;
+    color: #2f343a;
+    outline: none;
+    border-radius: 1.0em;   
+    background-color: rgb(209, 209, 209); 
+    font-family: "Google Sans", "Roboto", Helvetica;  
+    font-weight: bold;
+    font-size: 70%;
+    padding:0.5em;
+    margin-right: 1em;
+}
+
+.contenttxt { 
+    display: inline-block;
+    color: #2f343a;
+    outline: none;
+    font-family: "Google Sans", "Roboto", Helvetica;  
+    font-weight: bold;
+    font-size: 100%;
+    padding: 0.5em;
+}
+
+.danger {
+    display: inline-block;
+    position:absolute;
+    text-align: center;
+    justify-content: center;
+    color: rgb(228, 20, 20);
+    font-family: "Google Sans","Roboto",Helvetica;
+    font-weight: bolder;
+    border-radius: 50%;
+    border: 2px solid rgb(228, 20, 20);
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.cardflexbox {
+    display: flexbox;
+    gap: 20px;
+}
+
+.cardcontainer {
+    display: block;
+    position: relative;
+    border-radius: 1em;
+    padding: 1em;
+    width: 25%;
+    background-color: rgb(239, 246, 247);
+    left:5em;
+    user-select: none;
+    cursor: pointer;
+    margin: 1em;
+    transition: box-shadow 0.2s;
+}
+
+.cardcontainer:hover {
+    box-shadow: 1px 1px 5px #929eac;
+}
+
+.cardcontainer.handy {
+    left: 3em;
+    width: calc(100% - 4em);
+}
+
+.cardtitle {
+    display: inline-block;
+    color: #2f343a;
+    outline: none;
+    font-family: "Google Sans", "Roboto", Helvetica;  
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.cardduedate {
+    display: relative;
+    color: #2f343a;
+    outline: none;
+    font-family: "Google Sans", "Roboto", Helvetica;  
+    font-weight: bold;
+    font-size: 100%;
+    padding: 0.5em;
+}
+
+.cardtag {
+    display: inline-block;
+    color: #2f343a;
+    outline: none;
+    font-family: "Google Sans", "Roboto", Helvetica;  
+    font-weight: bold;
+    font-size: 80%;
+    padding: 0.5em;
+}
+
+.overduetxtcontainer {
+    position: relative;
+    border-radius: 1em;
+    padding: 1em;
+    background-color: rgb(249,249,249);
+    left:5em;
+    user-select: none;
+    cursor: pointer;
+    margin: 1em;
+    transition: box-shadow 0.2s;
+    overflow-x: hidden;
+    width: calc(100% - 6em);
+}
+
+.overduetxtcontainer.handy {
+    left: 3em;
+    width: calc(100% - 4em);
+}
+
+.overduetxt {
+    display: inline-block;
+    color: #2f343a;
+    outline: none;
+    font-family: "Google Sans", "Roboto", Helvetica;  
+    font-weight: bold;
+    font-size: 170%;
+}
+
+.caret {
+    position: relative;
+    transform: rotate(0deg);
+    transform-origin: -8px 0;
+    transition: all 0.3s ease;
+    left:1em;
+}
+
+.caret:before,
+.caret:after {
+  position: absolute;
+  content: "";
+  background: #2f343a;
+  width: 16px;
+  height: 4px;
+  top: 50%;
+  transform: rotate(-45deg);
+  right: 0;
+  transition: all 0.3s ease;
+}
+.caret:before {
+  right: 9px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.caret.open::after {
+    transform: rotate(45deg);
+}
+
+.caret.open::before {
+    transform: rotate(-45deg);
+}
+
+.expandbutton {
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    font-size: 200%;
+    font-weight: bolder;
+
+    background-color: rgb(249,249,249);
+    padding-left: 0.2em;
+    padding-right: 0.45em;
+    padding-top:0.7em;
+    padding-bottom:0.7em;
+    border: rgb(189, 189, 189) 1px solid;
+    border-radius: 0.2em;
+    left: 45px;
+    top: 50%;
+
+    justify-self: center;
+    transition: left 0.3s ease, box-shadow 0.2s ease; 
+}
+
+.expandbutton.open {
+    left: 145px;
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.35);
+}
+
+.expandcaret {
+    position: relative;
+    transform: rotate(0deg);
+    transform-origin: 0 0;
+    transition: all 0.3s ease;
+    left: 0.4em;
+    top: 0.15em;
+}
+
+.expandcaret:before,
+.expandcaret:after {
+  position: absolute;
+  content: "";
+  background: #768989;
+  width: 16px;
+  height: 4px;
+  transform: rotate(-60deg);
+  right: 0;
+  transition: all 0.3s ease;
+}
+.expandcaret:before {
+  top: -12px;
+  transform: rotate(60deg);
+  transition: all 0.3s ease;
+}
+
+.expandcaret.open::after {
+    transform: rotate(60deg);
+}
+
+.expandcaret.open::before {
+    transform: rotate(-60deg);
+}
+
+.tag_display {
+    display: block;
+    position: absolute;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 150%;
+    left: 8em;
+    background-color: rgb(249,249,249);
+    color: #2f343a;
+    padding: 0.3em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    border-radius: 0.8em;
+    margin-top: -0.3em;
+    margin-bottom: 1em;
+    user-select: none;
+}
+

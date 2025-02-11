@@ -1,0 +1,201 @@
+.blur1 {
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    margin-bottom: -30px;
+    height: 50px;
+    backdrop-filter: blur(5px);
+    mask-image: linear-gradient(to top, transparent, black 60%);
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutp1{
+    font-size: 200px;
+    font-family: "Google Sans", "Roboto", Helvetica;
+    font-weight: 100;
+    color: #303e4e;
+    display: inline;
+    position: relative;
+
+}
+
+.Saboutp1{
+    font-size: 75px;
+    font-family: "Google Sans", "Roboto", Helvetica;
+    font-weight: 400;
+    color: #303e4e;
+    display: inline;
+    position: relative;
+    top: 20px;
+
+}
+
+.aboutp2{
+    font-size: 50px;
+    font-family: "Google Sans", "Roboto", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    display: inline;
+    position: relative;
+    top: 80px;
+    left: 30px;
+}
+
+.Saboutp2{
+    font-size: 25px;
+    font-family: "Google Sans", "Roboto", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    display: inline;
+    position: relative;
+    top: 80px;
+    left: 20px;
+}
+
+.aboutp3{
+    font-size: 50px;
+    font-family: "Google Sans", "Roboto", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    display: inline;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.Saboutp3{
+    margin-right: 10px;
+    font-size: 25px;
+    font-family: "Google Sans", "Roboto", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    display: inline;
+    position: relative;
+    top: 100px;
+    left: 70px;
+}
+
+.aboutimg1{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -80px;
+    left: -220px;
+}
+
+.Saboutimg1{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 0px;
+    left: -100px;
+}
+
+.about-heading {
+    font-size: 40px;
+    font-family: "Google Sans", "Roboto", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    display: inline;
+    position: relative;
+    margin-left: 20%;
+}
+
+.aboutlogin:before,
+.aboutlogin:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.aboutlogin {
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: "Google Sans", "Roboto", Helvetica;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 0.5rem;
+}
+
+.aboutlogin {
+    color: #fff;
+    background-color: #43728d;
+    border-bottom: 5px solid #1d333f;
+}
+.aboutlogin:hover {
+    margin-top: 3px;
+    color: #fff;
+    background: #43728d;
+    border-bottom: 2px solid #1d333f;
+}
+.aboutlogin--shadow {
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+
+.Saboutlogin:before,
+.Saboutlogin:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.Saboutlogin {
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: "Google Sans", "Roboto", Helvetica;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 0.5rem;
+}
+
+.Saboutlogin {
+    color: #fff;
+    background-color: #43728d;
+    border-bottom: 5px solid #1d333f;
+}
+.Saboutlogin:hover {
+    margin-top: 3px;
+    color: #fff;
+    background: #43728d;
+    border-bottom: 2px solid #1d333f;
+}
+.Saboutlogin--shadow {
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+
+.apologize{
+    font-size: 10px;
+    position: relative;
+    bottom: -150px;
+}

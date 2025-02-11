@@ -1,0 +1,326 @@
+
+.logout {
+    margin-top: 50px ;
+    position: relative;
+    display: inline;
+    align-items: right;
+    justify-content: right;
+    height: 30px;
+    padding: 0 24px;
+    overflow: hidden;
+    font-size: 20px;
+    color: #fff;
+    text-align: right;
+    overflow-wrap: anywhere;
+    background: transparent;
+    text-decoration: none;
+  }
+  
+  .logout::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    content: "";
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: right top;
+  }
+  
+  @media (any-hover: hover) {
+    .logout::after {
+      transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  
+    .logout:hover::after {
+      transition: transform 0.4s cubic-bezier(0.9, 0, 0, 1);
+      transform: scaleX(1);
+      transform-origin: left top;
+    }
+  }
+  
+  
+  .home {
+    position: relative;
+    display: inline;
+    align-items: left;
+    justify-content: left;
+    height: 30px;
+    padding: 0 24px;
+    overflow: hidden;
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+    overflow-wrap: anywhere;
+    background: transparent;
+    text-decoration: none;
+  }
+  
+  .home::after {
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      content: "";
+      background-color: #fff;
+      transform: scaleX(0);
+      transform-origin: right top;
+  }
+  
+  @media (any-hover: hover) {
+    .home::after {
+      transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  
+    .home:hover::after {
+      transition: transform 0.4s cubic-bezier(0.9, 0, 0, 1);
+      transform: scaleX(1);
+      transform-origin: left top;
+    }
+  }
+  
+  .assignments {
+    position: relative;
+    display: inline;
+    align-items: left;
+    justify-content: left;
+    height: 30px;
+    padding: 0 24px;
+    overflow: hidden;
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+    overflow-wrap: anywhere;
+    background: transparent;
+    text-decoration: none;    
+  }
+  
+  .assignments::after {
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      content: "";
+      background-color: #fff;
+      transform: scaleX(0);
+      transform-origin: right top;
+  }
+  
+  @media (any-hover: hover) {
+    .assignments::after {
+      transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  
+    .assignments:hover::after {
+      transition: transform 0.4s cubic-bezier(0.9, 0, 0, 1);
+      transform: scaleX(1);
+      transform-origin: left top;
+    }
+  }
+  
+  .classes {
+    position: relative;
+    display: inline;
+    align-items: left;
+    justify-content: left;
+    height: 30px;
+    padding: 0 24px;
+    overflow: hidden;
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+    overflow-wrap: anywhere;
+    background: transparent;
+    text-decoration: none;    
+      
+  }
+  
+  .classes::after {
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      content: "";
+      background-color: #fff;
+      transform: scaleX(0);
+      transform-origin: right top;
+  }
+  
+  @media (any-hover: hover) {
+    .classes::after {
+      transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  
+    .classes:hover::after {
+      transition: transform 0.4s cubic-bezier(0.9, 0, 0, 1);
+      transform: scaleX(1);
+      transform-origin: left top;
+    }
+  }
+  
+  .notifications {
+    position: relative;
+    display: inline;
+    align-items: left;
+    justify-content: left;
+    height: 30px;
+    padding: 0 24px;
+    overflow: hidden;
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+    overflow-wrap: anywhere;
+    background: transparent;
+    text-decoration: none;    
+      
+  }
+  
+  .notifications::after {
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      content: "";
+      background-color: #fff;
+      transform: scaleX(0);
+      transform-origin: right top;
+  }
+  
+  @media (any-hover: hover) {
+    .notifications::after {
+      transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  
+    .notifications:hover::after {
+      transition: transform 0.4s cubic-bezier(0.9, 0, 0, 1);
+      transform: scaleX(1);
+      transform-origin: left top;
+    }
+  }
+  
+  .chats {
+    position: relative;
+    display: inline;
+    align-items: left;
+    justify-content: left;
+    height: 30px;
+    padding: 0 24px;
+    overflow: hidden;
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+    overflow-wrap: anywhere;
+    background: transparent;
+    text-decoration: none;        
+  }
+  
+  .chats::after {
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      content: "";
+      background-color: #fff;
+      transform: scaleX(0);
+      transform-origin: right top;
+  }
+  
+  @media (any-hover: hover) {
+    .chats::after {
+      transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  
+    .chats:hover::after {
+      transition: transform 0.4s cubic-bezier(0.9, 0, 0, 1);
+      transform: scaleX(1);
+      transform-origin: left top;
+    }
+  }
+  
+  .settings {
+    position: relative;
+    display: inline;
+    align-items: left;
+    justify-content: left;
+    height: 30px;
+    padding: 0 24px;
+    overflow: hidden;
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+    overflow-wrap: anywhere;
+    background: transparent;
+    text-decoration: none;    
+      
+  }
+  
+  .settings::after {
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      content: "";
+      background-color: #fff;
+      transform: scaleX(0);
+      transform-origin: right top;
+  }
+  
+  @media (any-hover: hover) {
+    .settings::after {
+      transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  
+    .settings:hover::after {
+      transition: transform 0.4s cubic-bezier(0.9, 0, 0, 1);
+      transform: scaleX(1);
+      transform-origin: left top;
+    }
+  }
+  
+  .notifications {
+    position: relative;
+    display: inline;
+    align-items: left;
+    justify-content: left;
+    height: 30px;
+    padding: 0 24px;
+    overflow: hidden;
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+    overflow-wrap: anywhere;
+    background: transparent;
+    text-decoration: none;    
+      
+  }
+  
+  .notifications::after {
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      content: "";
+      background-color: #fff;
+      transform: scaleX(0);
+      transform-origin: right top;
+  }
+  
+  @media (any-hover: hover) {
+    .notifications::after {
+      transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  
+    .notifications:hover::after {
+      transition: transform 0.4s cubic-bezier(0.9, 0, 0, 1);
+      transform: scaleX(1);
+      transform-origin: left top;
+    }
+  }

@@ -1,0 +1,145 @@
+.info{ 
+    margin-left: 0px;
+    font-size: 20px;
+    font-family:"Google Sans","roboto","helvetica";
+    font-weight: 100;
+    color: #2a2929;
+    display: inline;
+}
+
+.body{
+    padding: 10px;
+    user-select: none;
+}
+
+.offlinebody{
+    padding: 10px;
+    pointer-events: none;
+}
+
+.classlist{
+    margin-top: 35px;
+    margin-left: 16px;
+}
+
+.classes{
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.margin{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-family:"Google Sans","roboto","helvetica";
+    font-weight: 600;
+    color: #2a2929;
+    display: inline;
+}
+
+.Elect{
+    margin-left: 40px;
+}
+
+.greeting{
+    margin-left: 10px;
+    font-size: 40px;
+    font-family:"Google Sans","roboto","helvetica";
+    font-weight: 600;
+    color: #2a2929;
+    display: inline;
+}
+
+.content{
+    margin-left: 10px;
+    font-size: 18px;
+    font-family:"Google Sans","roboto","helvetica";
+    font-weight: 400;
+    color: #5e5d5d;
+    display: inline;
+}
+
+.selection {
+    font-size: 15px;
+    font-family:"Google Sans","roboto","helvetica";
+    font-weight: 400;
+    color: #5e5d5d;
+    display: inline-block;
+    cursor: pointer;
+    left: 10px;
+}
+
+.selected {
+    margin-left: 10px;
+    font-size: 18px;
+    font-family:"Google Sans","roboto","helvetica";
+    font-weight: 1000;
+    color: 5e5d5d;
+    display: inline;
+}
+
+.iosToggleButton {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: #dddddd;
+    cursor: pointer;
+    transition: 0.4s background-color;
+}
+
+.iosToggleButton:has(:checked) {
+    background-color: #66b4c4;
+}
+
+.iosToggleButton::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+    background-color: #fff;
+    content: '';
+    transition: 0.4s left;
+}
+
+.iosToggleButton:has(:checked)::after {
+    left: 25px;
+}
+
+.iosToggleButton input {
+    display: none;
+}
+
+.togglecontainer {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}
+
+.TxtwButton{
+    margin-bottom: 0px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-family:"Google Sans","roboto","helvetica";
+    font-weight: 600;
+    color: #2a2929;
+    display: inline;
+}
+
+.SetiingNotification{
+    margin-left: 20px;
+}
+
+.NotificationToggle{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.AssignmentToggle{
+    margin-left: 20px;
+}
