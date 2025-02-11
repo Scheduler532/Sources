@@ -7,15 +7,15 @@ importScripts('https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js
 importScripts('https://www.gstatic.com/firebasejs/10.13.1/firebase-messaging-compat.js');
 
 // Firebase 構成情報
-const firebaseConfig = {
-  apiKey: "AIzaSyBJS4vl9KGH5qPIIGv6aMBNhV4bSMStyGs",
-  authDomain: "schedular-412113.firebaseapp.com",
-  projectId: "schedular-412113",
-  storageBucket: "schedular-412113.appspot.com",
-  messagingSenderId: "860429400662",
-  appId: "1:860429400662:web:ea6b26102be323177f19f7",
-  measurementId: "G-6VRDPLPHDT"
-};
+const app = initializeApp({
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID,
+    measurementId: process.env.REACT_APP_MEASUREMENT_ID
+});
 
 // Firebase を初期化
 firebase.initializeApp(firebaseConfig);
